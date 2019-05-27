@@ -34,9 +34,27 @@ function Container({ color }) {
 // build me a ParagraphsContainer that uses ParagraphMaker internally
 // attach the ParagraphsContainer to the DOM
 
+
+function Paragraph({ color, text }) {
+  return (
+    <p style={{ color }}>{text}</p>
+  );
+}
+
+function ParagraphsContainer() {
+  return (
+    <div>
+      <Paragraph text="nice" color="green" />
+      <Paragraph text="foo" color="purple" />
+      <Paragraph text="bar" color="red" />
+      <Paragraph text="hey" color="pink" />
+    </div>
+  );
+}
+
 const myContainerNotCapitalized = <Container heading="cats" text="foo" color="grey" />;
 
 ReactDOM.render(
-  myContainerNotCapitalized, // react element would go here
+  <ParagraphsContainer />, // react element would go here
   document.querySelector('#target'),
 );
