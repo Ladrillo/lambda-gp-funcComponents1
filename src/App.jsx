@@ -30,6 +30,10 @@ function Container({ color }) {
   );
 }
 
+// build me a ParagraphMaker
+// build me a ParagraphsContainer that uses ParagraphMaker internally
+// attach the ParagraphsContainer to the DOM
+
 const myContainerNotCapitalized = <Container heading="cats" text="foo" color="grey" />;
 
 ReactDOM.render(
