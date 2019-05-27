@@ -23,7 +23,7 @@ function MySection({ heading, text, color }) {
 function Container({ color }) {
   return (
     <div>
-      <h3>This is the Container</h3>
+      <h3 id="containerHeading">This is the Container</h3>
       <MySection heading="cats" text="miau" color={color} />
       <MySection heading="dogs" text="bark" color={color} />
     </div>
